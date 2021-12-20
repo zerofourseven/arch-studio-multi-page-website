@@ -1,0 +1,88 @@
+.nav {
+  align-items: center;
+  background: $blank;
+  display: flex;
+  padding: 32px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100vw;
+  z-index: 5;
+
+  &__logo {
+    height: 32px;
+  }
+
+  &__links {
+    display: none;
+  }
+
+  &__close,
+  &__menu {
+    cursor: pointer;
+    height: 24px;
+    margin-left: auto;
+    position: relative;
+  }
+}
+
+@include screenTablet {
+  .nav {
+    padding-left: 96px;
+
+    &__links {
+      display: flex;
+      font-weight: 700;
+      list-style: none;
+      padding-left: 78px;
+      width: 100%;
+    }
+
+    &__item:first-child {
+      padding-left: 0;
+    }
+
+    &__item {
+      padding-left: 4.8rem;
+    }
+
+    &__item a {
+      color: $medium-grey;
+      display: inline-block;
+      font-size: 1.5rem;
+      letter-spacing: 0;
+      line-height: 2.5rem;
+      padding-bottom: 7px;
+      position: relative;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    //for bottom border
+    &__item a:hover::after {
+      border-bottom: 1px solid $very-dark-blue;
+      bottom: 0;
+      content: "";
+      left: 33%; /*this centers it based on above width*/
+      position: absolute;
+      width: 33%;
+    }
+
+    &__item a:hover {
+      color: $very-dark-blue;
+    }
+
+    &__close,
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@include screenDesktop {
+  .nav {
+    &__links {
+      padding-left: 95px;
+    }
+  }
+}

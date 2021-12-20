@@ -1,0 +1,9 @@
+@import "./global"; /*links to _global.scss */
+
+/*todo import all the other scss files in this directory here too */
+
+@import "./pages/HomePage"; /* links to _HomePage.scss */
+
+@import "./components/Navbar";
+@import "./components/Sidebar";
+@import "./components/Footer";

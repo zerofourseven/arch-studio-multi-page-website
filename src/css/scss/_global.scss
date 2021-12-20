@@ -1,0 +1,147 @@
+/* Global styles for the project. e.g. headings and buttons */
+/* Mobile-first design */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+
+/* Colors */
+$blank: white;
+$very-dark-blue: #1b1d23;
+$dark-grey: #60636d;
+$medium-grey: #7d828f;
+$light-grey: #c8ccd8;
+$very-light-grey: #eeeff4;
+$errors-red: #df5656;
+
+/* General things */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Spartan, sans-serif;
+}
+
+@mixin screenTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screenDesktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+/* Typography and Buttons */
+html {
+  font-size: 62.5%;
+}
+
+.large-header,
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.large-header {
+  display: none; /*the few large headers don't appear on mobile design */
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.12rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.143rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0;
+  color: $dark-grey;
+}
+
+.button {
+  border: 0;
+  background: $very-dark-blue;
+  color: $blank;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  outline: 0;
+  padding: 2.4rem 3.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: background 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    background: $dark-grey;
+  }
+
+  &--arrow {
+  }
+}
+
+@include screenTablet() {
+  .large-header {
+    color: $very-light-grey;
+    display: block;
+    font-size: 12rem;
+    line-height: 20rem;
+    letter-spacing: -0.3rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: -0.2rem;
+  }
+
+  h2 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.2rem;
+  }
+
+  h3 {
+    /* no change */
+  }
+
+  p {
+    line-height: 2.5rem;
+  }
+}
+
+@include screenDesktop() {
+  .large-header {
+    font-size: 20rem;
+    line-height: 20rem;
+    letter-spacing: -0.5rem;
+  }
+
+  h1 {
+    /* no change from tablet */
+  }
+
+  h2 {
+    /* no change from tablet */
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+}
