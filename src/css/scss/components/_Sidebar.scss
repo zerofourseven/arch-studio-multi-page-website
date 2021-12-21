@@ -1,8 +1,10 @@
 .sidebar {
   background-color: $very-light-grey;
+  overflow: hidden;
   position: fixed;
   right: 0;
   width: 90%;
+  transition: width 0.5s;
   z-index: 5;
 
   &__links {
@@ -10,7 +12,9 @@
     flex-direction: column;
     font-weight: 700;
     list-style: none;
+    overflow: hidden;
     padding: 4.5rem;
+    white-space: nowrap;
   }
 
   &__item a {
@@ -24,6 +28,10 @@
   &__item + &__item {
     padding-top: 3.2rem;
   }
+
+  &--closed {
+    width: 0;
+  }
 }
 
 .shadow {
@@ -31,10 +39,16 @@
   width: 100vw;
   height: 100%;
   position: fixed;
-  //-webkit-transition: visibility 0.5s, opacity 0.5s;
-  //transition: visibility 0.5s, opacity 0.5s;
+  -webkit-transition: visibility 0.5s, opacity 0.5s;
+  transition: visibility 0.5s, opacity 0.5s;
 
   z-index: 4;
+
+  &--closed {
+    visibility: "hidden";
+    opacity: 0;
+    width: 0;
+  }
 }
 
 @include screenTablet {

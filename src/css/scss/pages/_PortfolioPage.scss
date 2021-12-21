@@ -1,0 +1,14 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 2.4rem;
+  margin: 3.2rem;
+}
+
+@include screenDesktop {
+  .portfolio-grid {
+    grid-template-columns: 3;
+    grid-gap: 3.2rem;
+    margin: 0;
+  }
+}

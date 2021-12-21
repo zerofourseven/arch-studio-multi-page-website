@@ -1,0 +1,90 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, $very-light-grey 85%, $blank 85%);
+  align-items: center;
+  margin: 0 auto;
+
+  &__logo-background {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: $very-dark-blue;
+    height: 120px;
+    width: 120px;
+  }
+
+  &__logo {
+    height: 24px;
+    filter: brightness(10);
+  }
+
+  &__links {
+    //background-color: $very-light-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    font-weight: 700;
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    padding: 1.6rem 0;
+  }
+
+  &__item a {
+    color: $medium-grey;
+
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    line-height: 2.5rem;
+
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  &__item a:hover {
+    color: $very-dark-blue;
+  }
+}
+
+@include screenTablet {
+  .footer {
+    background: linear-gradient(90deg, $very-light-grey 90%, $blank 90%);
+    flex-direction: row;
+
+    &__links {
+      padding: 0 4rem;
+      flex-direction: row;
+    }
+
+    &__item + &__item {
+      padding-left: 4.8rem;
+    }
+  }
+}
+
+@include screenDesktop {
+  .footer {
+    &__logo-background {
+      height: 200px;
+      width: 200px;
+    }
+
+    &__logo {
+      height: 40px;
+    }
+
+    &__links {
+      padding-left: 8.5rem;
+    }
+
+    &__item + &__item {
+      padding-left: 5.6rem;
+    }
+  }
+}

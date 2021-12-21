@@ -5,7 +5,6 @@
   padding: 32px;
   position: relative;
   margin: 0 auto;
-  max-width: 1140px;
   width: 100vw;
   z-index: 5;
 
@@ -59,6 +58,16 @@
     }
 
     //for bottom border
+    &__item a::after {
+      border-bottom: 1px solid $medium-grey;
+      bottom: 0;
+      content: "";
+      left: 50%; /*this centers it based on above width*/
+      position: absolute;
+      width: 0;
+      transition: all 0.3s;
+    }
+
     &__item a:hover::after {
       border-bottom: 1px solid $very-dark-blue;
       bottom: 0;

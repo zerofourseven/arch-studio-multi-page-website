@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 const Sidebar = ({sidebarToggle, toggleSidebar}) => {
     return (
         <>
-        <div className="shadow" onClick={toggleSidebar}>
-
-        </div>
-        <aside className="sidebar" >
+        <div id="shadow" className={sidebarToggle ? "shadow" : "shadow shadow--closed"} onClick={toggleSidebar}></div> 
+        <aside id="sidebar" className={sidebarToggle ? "sidebar" : "sidebar sidebar--closed"} >
             <ul className="sidebar__links">
                 <li className="sidebar__item"><Link to="/portfolio">Portfolio</Link></li>
                 <li className="sidebar__item"><Link to="/about">About Us</Link></li>
