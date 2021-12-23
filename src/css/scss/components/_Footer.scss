@@ -3,7 +3,7 @@
   flex-direction: column;
   background: linear-gradient(0deg, $very-light-grey 85%, $blank 85%);
   align-items: center;
-  margin: 0 auto;
+  margin: 7.2rem auto 0 auto;
 
   &__logo-background {
     display: flex;
@@ -56,6 +56,7 @@
   .footer {
     background: linear-gradient(90deg, $very-light-grey 90%, $blank 90%);
     flex-direction: row;
+    margin-top: 20rem;
 
     &__links {
       padding: 0 4rem;
@@ -70,6 +71,8 @@
 
 @include screenDesktop {
   .footer {
+    margin-top: 16rem;
+
     &__logo-background {
       height: 200px;
       width: 200px;

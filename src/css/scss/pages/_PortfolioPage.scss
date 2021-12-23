@@ -1,14 +1,65 @@
 .portfolio-grid {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 100%;
   grid-gap: 2.4rem;
   margin: 3.2rem;
+  justify-items: center;
+
+  &__project {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .portfolio-grid__project {
+    transition: filter 0.5s;
+  }
+
+  .portfolio-grid__project:hover {
+    filter: brightness(1.3);
+  }
+
+  .project__gradient {
+    background: rgba(0, 0, 0, 0.2); /*fallback color */
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5018207966780462) 0%,
+      rgba(0, 0, 0, 0.014425838694852922) 100%
+    );
+    position: absolute;
+
+    height: 99.6%;
+    width: 100%;
+  }
+
+  .project__info {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 2.4rem;
+  }
+
+  .project__image {
+    width: 100%;
+  }
+
+  h3,
+  p {
+    margin: 0;
+    color: $blank;
+  }
+}
+
+@include screenTablet {
+  .portfolio-grid {
+    .project__image {
+      max-width: 600px;
+    }
+  }
 }
 
 @include screenDesktop {
   .portfolio-grid {
-    grid-template-columns: 3;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.2rem;
-    margin: 0;
+    margin: 0 auto;
   }
 }

@@ -90,6 +90,7 @@
 
 @include screenDesktop {
   .nav {
+    padding-left: 0;
     &__links {
       padding-left: 95px;
     }

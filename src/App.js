@@ -13,11 +13,12 @@ function App() {
       <h2>this is heading 2</h2>
   <h3>Heading 3 here</h3>*/}
       <Navbar/>
-      <Routes />
-        {/*<Route path="/" element={<HomePage />} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/about" element={<AboutPage />} />
-<Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/contact" element={<ContactPage />} /> 
+        </Routes>
       <Footer />
     </Router>
   );
