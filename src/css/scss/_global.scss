@@ -23,6 +23,11 @@ $errors-red: #df5656;
   max-width: 1140px;
 }
 
+.block {
+  margin: 50px 0; //top and bottom margin to separate blocks
+  padding: 0 32px; //general left-right padding. not every block has this, though.
+}
+
 @mixin screenTablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -39,12 +44,19 @@ $errors-red: #df5656;
 html {
   font-size: 62.5%;
 }
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .large-header,
 h1,
 h2,
 h3 {
   font-weight: 700;
+  margin: 0;
 }
 
 .large-header {
@@ -121,6 +133,11 @@ a {
 }
 
 @include screenTablet() {
+  .block {
+    margin: 10px 0; //top and bottom margin to separate blocks
+    padding: 0 96px; //general left-right padding. not every block has this, though.
+  }
+
   .large-header {
     color: $very-light-grey;
     display: block;
@@ -151,6 +168,10 @@ a {
 }
 
 @include screenDesktop() {
+  .block {
+    padding: 0; //no more general block padding
+  }
+
   .large-header {
     font-size: 20rem;
     line-height: 20rem;

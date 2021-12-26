@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
-import arrowIcon from '../assets/icons/icon-arrow.svg';
+import Button from './Button';
 
 const Footer = () => {
     return (
@@ -14,12 +14,7 @@ const Footer = () => {
                 <li className="footer__item"><Link to="/about">About Us</Link></li>
                 <li className="footer__item"><Link to="/contact">Contact</Link></li>
             </ul>
-            <Link to="/portfolio">
-                <button className="button">
-                    see our portfolio <img src={arrowIcon} alt="View portfolio" className="button__arrow" />
-                </button>
-            </Link>
-            
+            <Button linkName="/portfolio" text="see our portfolio" arrow="true" altText="View portfolio" />
         </footer>
     )
 }

@@ -1,0 +1,58 @@
+.welcome-block {
+  margin: 5rem auto;
+  padding-top: 7rem;
+  position: relative;
+
+  &::before {
+    border-top: 1px solid $light-grey;
+    top: 0;
+    content: "";
+    position: absolute;
+    width: 65px;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  p {
+    max-width: 60ch;
+  }
+
+  &__image {
+    display: none;
+  }
+}
+
+@include screenTablet {
+  .welcome-block {
+    margin: 10rem auto;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@include screenDesktop {
+  .welcome-block {
+    &__image {
+      display: block;
+      justify-self: end;
+    }
+
+    &__text {
+      margin-left: 190px;
+      margin-top: 7rem;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      margin-top: 10rem;
+    }
+
+    &__large-header {
+      position: absolute;
+    }
+  }
+}

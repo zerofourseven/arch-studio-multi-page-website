@@ -209,3 +209,56 @@ export const portfolioData = [
         date: new Date('Feb 01 2008')
     }
 ]
+
+export const featuredData = [
+    {
+        image: {
+            webp: {
+                mobile: portfolioImagesMobile.delSolwebp,
+                tablet: portfolioImagesTablet.delSolwebp,
+                desktop: portfolioImagesDesktop.delSolwebp
+            },
+            jpeg: {
+                mobile: portfolioImagesMobile.delSoljpg,
+                tablet: portfolioImagesTablet.delSoljpg,
+                desktop: portfolioImagesDesktop.delSoljpg
+            }
+            
+        },
+        title: 'Project Del Sol'
+    },
+    {
+        image: {
+            webp: {
+                mobile: portfolioImagesMobile.tower228bwebp,
+                tablet: portfolioImagesTablet.tower228bwebp,
+                desktop: portfolioImagesDesktop.tower228bwebp
+            },
+            jpeg: {
+                mobile: portfolioImagesMobile.tower228bjpg,
+                tablet: portfolioImagesTablet.tower228bjpg,
+                desktop: portfolioImagesDesktop.tower228bjpg
+            }
+            
+        },
+        title: '228B Tower'
+    },
+    {
+        image: {
+            webp: {
+                mobile: portfolioImagesMobile.prototypewebp,
+                tablet: portfolioImagesTablet.prototypewebp,
+                desktop: portfolioImagesDesktop.prototypewebp
+            },
+            jpeg: {
+                mobile: portfolioImagesMobile.prototypejpg,
+                tablet: portfolioImagesTablet.prototypejpg,
+                desktop: portfolioImagesDesktop.prototypejpg
+            }
+            
+        },
+        title: 'Le Prototype'
+    }
+
+
+]
