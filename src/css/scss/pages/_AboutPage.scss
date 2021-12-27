@@ -1,0 +1,41 @@
+.heritage-block {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-top: 7rem;
+
+  p {
+    max-width: 60ch;
+  }
+
+  &__grid {
+    display: grid;
+    align-items: center;
+  }
+
+  &__grid::before {
+    border-top: 1px solid $light-grey;
+    top: 0;
+    content: "";
+    position: absolute;
+    width: 65px;
+  }
+
+  &__grid img {
+    display: none;
+  }
+}
+
+@include screenDesktop {
+  .heritage-block {
+    padding-top: 0;
+    &__grid {
+      grid-template-columns: auto auto;
+      grid-gap: 12.4rem;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}

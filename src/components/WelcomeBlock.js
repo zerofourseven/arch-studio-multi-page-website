@@ -4,10 +4,10 @@ import welcomeImage from '../assets/home/desktop/image-welcome.jpg'
 const WelcomeBlock = () => {
     return (
         <section className="container block welcome-block">
-                <h1 className="large-header welcome-block__large-header">Welcome</h1>
+                <h1 className="large-header welcome-block__large-header disable-select">Welcome</h1>
                 <div  className="welcome-block__grid">
                     <div className="welcome-block__text">
-                        <h2 className="welcome-block__small-header">Welcome to <br/>Arch Studio</h2>
+                        <h2>Welcome to <br/>Arch Studio</h2>
                         <p>
                             We have a unique network and skillset to help bring your projects to life. Our 
                             small team of highly skilled individuals combined with our large network put us 
@@ -21,7 +21,7 @@ const WelcomeBlock = () => {
                             stunning projects that will stand the test of time.
                         </p>
                     </div>
-                    <img src={welcomeImage} alt="Image of side of a silver building" className="welcome-block__image"/>
+                    <img src={welcomeImage} alt="Side of a silver building" className="welcome-block__image"/>
                 </div>
             </section>
     )

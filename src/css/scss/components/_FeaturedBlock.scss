@@ -2,8 +2,7 @@
   display: grid;
   grid-template-areas: "a" "b" "c";
   position: relative;
-  margin: 0 auto;
-  max-width: 1140px;
+  margin: 10rem auto;
 
   &__title {
     grid-area: a;

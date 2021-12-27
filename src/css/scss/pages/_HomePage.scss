@@ -1,1 +1,60 @@
 //make hero a Section
+
+.about-link-block {
+  position: relative;
+  padding: unset;
+
+  margin: 10rem auto;
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__contents {
+    position: absolute;
+    top: 50%; /* 3 */
+    transform: translate(0, -50%);
+    left: 2rem;
+    z-index: 2;
+  }
+
+  &__small-header {
+    color: $blank;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@include screenTablet {
+  .about-link-block {
+    padding: 0 96px;
+
+    &__contents {
+      left: 15%;
+    }
+  }
+}
+
+@include screenDesktop {
+  .about-link-block {
+    padding: 0;
+
+    &__contents {
+      left: 18%;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 import portfolioImagesMobile from '../assets/portfolio/mobile';
 import portfolioImagesTablet from '../assets/portfolio/tablet';
 import portfolioImagesDesktop from '../assets/portfolio/desktop';
+import leaderImages from '../assets/about/desktop';
 
 export const portfolioData = [
     {
@@ -258,6 +259,31 @@ export const featuredData = [
             
         },
         title: 'Le Prototype'
+    }
+
+
+]
+
+export const leaderData = [
+    {
+        image: leaderImages.jake,
+        name: "Jake Richards",
+        title: "Chief Architect"
+    },
+    {
+        image: leaderImages.thompson,
+        name: "Thompson Smith",
+        title: "Head of Finance"
+    },
+    {
+        image: leaderImages.jackson,
+        name: "Jackson Rourke",
+        title: 'Lead Designer'
+    },
+    {
+        image: leaderImages.maria,
+        name: "Maria Simpson",
+        title: "Senior Architect"
     }
 
 
