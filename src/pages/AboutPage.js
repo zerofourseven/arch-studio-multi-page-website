@@ -2,11 +2,24 @@ import React from 'react'
 import SecondaryHeroBlock from '../components/SecondaryHeroBlock'
 import LeaderBlock from '../components/LeaderBlock'
 import HeritageImage from '../assets/about/desktop/image-heritage.jpg'
+import heroImgMobile from '../assets/about/mobile/image-hero.jpg'
+import heroImgTablet from '../assets/about/tablet/image-hero.jpg'
+import heroImgDesktop from '../assets/about/desktop/image-hero.jpg'
+
+
 
 const AboutPage = () => {
+    const pText = `Our small team of world-class professionals will work with you every step of the way. 
+Strong relationships are at the core of everything we do. This extends to the 
+relationship our projects have with their surroundings.`
+
+const images = [heroImgMobile, heroImgTablet, heroImgDesktop];
+
+const altText=`The hands of a man in a white sweater typing on a laptop`;
+
     return (
         <>
-           <SecondaryHeroBlock/>
+           <SecondaryHeroBlock header="About" title={<h2>Your team of<br/>Professionals</h2>} text={pText} images={images} altText={altText}/>
             <section className='container block heritage-block'>
                 <div className='heritage-block__grid'>
                     <div>

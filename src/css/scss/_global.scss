@@ -28,6 +28,10 @@ $errors-red: #df5656;
   padding: 0 32px; //general left-right padding. not every block has this, though.
 }
 
+.block + .block {
+  margin-top: 72px;
+}
+
 @mixin screenTablet {
   @media screen and (min-width: 768px) {
     @content;
@@ -37,6 +41,12 @@ $errors-red: #df5656;
 @mixin screenDesktop {
   @media screen and (min-width: 1440px) {
     @content;
+  }
+}
+
+@include screenDesktop {
+  .block + .block {
+    margin-top: 200px;
   }
 }
 

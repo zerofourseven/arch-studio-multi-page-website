@@ -1,3 +1,5 @@
+$rightpadding: 96px;
+
 .secondary-hero-block {
   margin-left: auto;
   margin-right: auto;
@@ -31,17 +33,78 @@
   &__text {
     background-color: $blank;
     padding-top: 8rem;
-    width: 100%;
+    width: 105%;
     margin-top: -50px;
     margin-left: -32px;
     padding-left: 32px;
+
+    h2 {
+      overflow-wrap: break-word;
+    }
   }
 }
 
 @include screenTablet {
   .secondary-hero-block {
     &__image-container {
-      position: relative;
+      // position: relative;
+      margin: 0;
+    }
+
+    &__large-header {
+      position: absolute;
+      margin-top: -530px;
+      padding-right: $rightpadding;
+      right: 0;
+      z-index: 1;
+    }
+
+    &__text {
+      position: absolute;
+      right: 0;
+      width: 80%;
+      margin-top: -430px;
+      padding-right: $rightpadding;
+      padding-top: 15rem;
+      padding-bottom: 8rem;
+    }
+
+    &__text:before {
+      border-top: 1px solid $light-grey;
+      top: 17%;
+      content: "";
+      position: absolute;
+      width: 65px;
+    }
+  }
+}
+
+@include screenDesktop {
+  .secondary-hero-block {
+    &__image-container {
+      width: 55%;
+    }
+
+    &__large-header {
+      padding-right: 25px;
+      margin-top: -55%;
+    }
+
+    &__text {
+      padding-right: 0;
+      padding-left: 10%;
+      margin-top: -45%;
+      padding-top: 20%;
+
+      width: 55%;
+
+      h2 {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__text:before {
+      top: 25%;
     }
   }
 }
