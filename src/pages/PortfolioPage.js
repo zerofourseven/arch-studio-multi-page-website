@@ -24,7 +24,6 @@ const PortfolioPage = () => {
                     <source srcSet={image.jpeg.mobile} type="image/jpeg"/>
                     <img
                       srcSet={`${image.jpeg.mobile} 311w, ${image.jpeg.tablet} 573w, ${image.jpeg.desktop} 350w`}
-                      /*sizes="" i have to use this too... also might run into issues bc the images are different ratios... */
                       src={image.jpeg.mobile}
                       alt={title}
                       className="project__image"

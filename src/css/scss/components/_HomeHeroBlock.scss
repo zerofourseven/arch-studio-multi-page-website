@@ -1,0 +1,61 @@
+.home-hero-block {
+  position: relative;
+  padding: unset;
+  margin: 0 auto;
+
+  &__slide {
+    position: relative;
+  }
+
+  .project__image {
+    width: 100%;
+  }
+
+  .project__info {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: $blank;
+    z-index: 2;
+  }
+
+  p {
+    color: $blank;
+  }
+
+  &__image-container {
+    position: relative;
+  }
+
+  &__image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  &__portfolio-button {
+    margin-top: 50px;
+  }
+}
+
+@include screenTablet {
+  .home-hero-block {
+    padding: 0 96px;
+  }
+}
+
+@include screenDesktop {
+  .home-hero-block {
+    padding: 0;
+
+    .project__info {
+      left: 45%;
+    }
+  }
+}

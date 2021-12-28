@@ -1,0 +1,70 @@
+.form-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $very-dark-blue;
+    transition: all 0.1s;
+    outline: none;
+    font-size: 2rem;
+    padding-left: 35px;
+    padding-bottom: 24px;
+    font-weight: 700;
+    color: $light-grey;
+
+    &:focus {
+      border-bottom: 3px solid $very-dark-blue;
+      color: $very-dark-blue;
+    }
+
+    &:invalid {
+      //color: $errors-red;
+      //border-color: $errors-red;
+    }
+  }
+
+  textarea {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    resize: none;
+  }
+
+  input + input {
+    margin-top: 40px;
+  }
+
+  &__submit {
+    float: right;
+  }
+}
+
+@include screenTablet {
+  .form-block {
+    &__title {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@include screenDesktop {
+  .form-block {
+    grid-template-columns: 1fr 2fr;
+
+    &__title {
+      padding-right: 4rem;
+    }
+  }
+}

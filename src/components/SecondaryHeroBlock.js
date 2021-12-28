@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+//For the Hero block shared b/w About and Contact pages
 const SecondaryHeroBlock = ({header, title, text, images, altText}) => {
     return (
         <section className='container block secondary-hero-block'>

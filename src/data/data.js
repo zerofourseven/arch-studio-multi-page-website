@@ -3,6 +3,9 @@ import portfolioImagesMobile from '../assets/portfolio/mobile';
 import portfolioImagesTablet from '../assets/portfolio/tablet';
 import portfolioImagesDesktop from '../assets/portfolio/desktop';
 import leaderImages from '../assets/about/desktop';
+import slidesMobile from '../assets/home/mobile';
+import slidesTablet from '../assets/home/tablet';
+import slidesDesktop from '../assets/home/desktop';
 
 export const portfolioData = [
     {
@@ -284,6 +287,47 @@ export const leaderData = [
         image: leaderImages.maria,
         name: "Maria Simpson",
         title: "Senior Architect"
+    }
+
+
+]
+
+export const slideData = [
+    {
+        title: 'Project Paramour',
+        description: 'Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.',
+        image: {
+            mobile: slidesMobile.paramour,
+            tablet: slidesTablet.paramour,
+            desktop: slidesDesktop.paramour
+        }
+    },
+    {
+        title: 'Seraph Station',
+        description: 'The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.',
+        image: {
+            mobile: slidesMobile.seraph,
+            tablet: slidesTablet.seraph,
+            desktop: slidesDesktop.seraph
+        }
+    },
+    {
+        title: 'Federal II Tower',
+        description: 'A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.',
+        image: {
+            mobile: slidesMobile.federal,
+            tablet: slidesTablet.federal,
+            desktop: slidesDesktop.federal
+        }
+    },
+    {
+        title: 'Trinity Bank Tower',
+        description: 'Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.',
+        image: {
+            mobile: slidesMobile.trinity,
+            tablet: slidesTablet.trinity,
+            desktop: slidesDesktop.trinity
+        }
     }
 
 

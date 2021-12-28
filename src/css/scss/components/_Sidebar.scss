@@ -1,7 +1,7 @@
 .sidebar {
   background-color: $very-light-grey;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 90%;
   transition: width 0.5s;
@@ -37,12 +37,13 @@
 .shadow {
   background-color: rgba(0, 0, 0, 0.75);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   -webkit-transition: visibility 0.5s, opacity 0.5s;
   transition: visibility 0.5s, opacity 0.5s;
 
   z-index: 4;
+  margin-top: -100px;
 
   &--closed {
     visibility: "hidden";

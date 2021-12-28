@@ -142,6 +142,20 @@ a {
   }
 }
 
+.button--block {
+  padding: 3.2rem 2.8rem;
+
+  .button__arrow {
+    margin-left: 0px;
+    margin-right: 4px;
+  }
+
+  &:hover .button__arrow {
+    margin-left: 4px;
+    margin-right: 0px;
+  }
+}
+
 @include screenTablet() {
   .block {
     margin: 10px 0; //top and bottom margin to separate blocks
