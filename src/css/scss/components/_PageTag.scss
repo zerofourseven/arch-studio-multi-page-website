@@ -1,0 +1,32 @@
+.page-tag {
+  display: none;
+}
+
+@include screenTablet {
+  .page-tag {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    transform: rotate(90deg);
+    left: -200px;
+    top: 235px;
+    width: 500px; //to avoid the page tag jumping positions when changing pages
+    z-index: 6;
+
+    hr {
+      background-color: $light-grey;
+      border: none;
+      width: 84px;
+      height: 1px;
+      margin: 0;
+      margin-right: 4rem;
+    }
+    p {
+      color: $light-grey;
+      letter-spacing: 1.5rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}

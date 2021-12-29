@@ -1,12 +1,11 @@
 @import "./global"; /*links to _global.scss */
 
-/*todo import all the other scss files in this directory here too */
-
 @import "./pages/HomePage"; /* links to _HomePage.scss */
 @import "./pages/PortfolioPage";
 @import "./pages/AboutPage";
 @import "./pages/ContactPage";
 
+@import "./components/PageTag";
 @import "./components/Navbar";
 @import "./components/Sidebar";
 @import "./components/Footer";
