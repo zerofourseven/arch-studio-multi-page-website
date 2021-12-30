@@ -3,9 +3,33 @@
   padding: unset;
   margin: 0 auto;
 
-  &__slide {
+  &__slideshow-container {
     position: relative;
+    overflow: hidden;
   }
+
+  &__slideshow {
+    display: flex;
+  }
+
+  &__slide {
+    position: absolute;
+    display: block;
+    transform: translateX(100%);
+    width: 100%;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+  }
+
+  .active {
+    opacity: 1;
+    transform: translateX(0);
+
+    position: relative; //this allows parent container to recognize height of contents
+  }
+
+  //.active-previous {
+  //}
 
   .project__image {
     width: 100%;
@@ -42,20 +66,53 @@
   &__portfolio-button {
     margin-top: 50px;
   }
+
+  &__slideshow-buttons {
+    display: none;
+  }
 }
 
 @include screenTablet {
   .home-hero-block {
-    padding: 0 96px;
+    //padding: 0 96px;
+    margin: 0 96px; //opposed to padding, to keep slides at consistent width during slide transitions in Tablet mode.
   }
 }
 
 @include screenDesktop {
   .home-hero-block {
     padding: 0;
+    margin: 0 auto;
 
     .project__info {
       left: 45%;
+    }
+
+    &__slideshow-buttons {
+      position: absolute;
+
+      display: flex;
+      bottom: 0;
+      left: calc(-1 * (6.25px + 32px * 2));
+      z-index: 5;
+
+      .button {
+        background-color: $blank;
+        color: $medium-grey;
+      }
+
+      .button:hover {
+        background-color: $very-light-grey;
+      }
+
+      .button--active {
+        background-color: $very-dark-blue;
+        color: $blank;
+      }
+
+      .button--active:hover {
+        background-color: $very-dark-blue;
+      }
     }
   }
 }
