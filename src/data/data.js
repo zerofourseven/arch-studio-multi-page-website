@@ -332,3 +332,17 @@ export const slideData = [
 
 
 ]
+
+export const locationData = [
+    {
+        name: 'Main Office',
+        email: 'archone@mail.com',
+        address: '1892 Chenoworth Drive TN',
+        phone: '123-456-3451'
+    }, {
+        name: 'Office II',
+        email: 'archtwo@mail.com',
+        address: '3399 Wines Lane TX',
+        phone: '832-123-4321'
+    }
+]

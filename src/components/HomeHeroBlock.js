@@ -81,7 +81,7 @@ const HomeHeroBlock = () => {
                     slideData.map((project, index) => {
                         let buttonState = index === chosenSlide ? ' button--active' : '';
                         return (
-                            <button key={index} className={`button${buttonState}`} onClick={() => {setChosenSlide(index);}}>{index + 1}</button>
+                            <button key={index} className={`button${buttonState}`} onClick={() => {setChosenSlide(index);}}>0{index + 1}</button>
                         );
                     }
                     )

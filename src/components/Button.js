@@ -5,7 +5,7 @@ import arrowIcon from '../assets/icons/icon-arrow.svg';
 //className for the link, btnClassname for the <button> itself
 const Button = ({className, btnClassname, linkName, text, arrow, altText}) => {
     return (
-        <Link to={linkName} className={className ? className : null}>
+        <Link to={linkName} className={className ? `button-link ${className}` : 'button-link'}>
             <button className={btnClassname ? `button ${btnClassname}` : "button"}>
                {text ? text : null} {arrow ? <img src={arrowIcon} alt={altText} className="button__arrow" /> : null}
             </button>

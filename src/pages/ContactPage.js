@@ -4,6 +4,7 @@ import FormBlock from '../components/FormBlock'
 import heroImgMobile from '../assets/contact/mobile/image-hero.jpg'
 import heroImgTablet from '../assets/contact/tablet/image-hero.jpg'
 import heroImgDesktop from '../assets/contact/desktop/image-hero.jpg'
+import ContactDetailsBlock from '../components/ContactDetailsBlock'
 
 
 const ContactPage = () => {
@@ -19,6 +20,7 @@ const ContactPage = () => {
     return (
         <>
             <SecondaryHeroBlock header="Contact" title={<h2>Tell us about<br/>your project</h2>} text={pText} images={images} altText={altText}/>
+            <ContactDetailsBlock />
             <FormBlock />
         </>
     )

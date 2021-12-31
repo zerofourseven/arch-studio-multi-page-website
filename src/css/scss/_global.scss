@@ -102,6 +102,11 @@ a {
   text-decoration: none;
 }
 
+.button-link {
+  display: inline-block;
+  width: fit-content;
+}
+
 .button {
   border: 0;
   background: $very-dark-blue;

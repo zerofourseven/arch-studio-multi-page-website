@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 const PageTag = () => {
     let currentLocation = useLocation().pathname.split('/')[1];
-    console.log(currentLocation);
+    
 
     if(!currentLocation) 
         currentLocation = 'home';
