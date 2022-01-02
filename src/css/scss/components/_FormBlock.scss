@@ -23,17 +23,35 @@
     padding-left: 35px;
     padding-bottom: 24px;
     font-weight: 700;
-    color: $light-grey;
+    color: $medium-grey;
 
     &:focus {
       border-bottom: 3px solid $very-dark-blue;
       color: $very-dark-blue;
     }
 
-    &:invalid {
-      //color: $errors-red;
-      //border-color: $errors-red;
+    &:user-invalid {
+      color: $errors-red;
+      border-color: $errors-red;
     }
+
+    &:user-invalid + span::before {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $errors-red;
+      position: absolute;
+      right: 0;
+      margin-top: -4rem;
+    }
+  }
+
+  &__form-name:user-invalid + span:before,
+  &__form-message:user-invalid + span:before {
+    content: "Can't be empty";
+  }
+
+  &__form-email:user-invalid + span:before {
+    content: "Please enter a valid email";
   }
 
   textarea {
@@ -42,12 +60,18 @@
     resize: none;
   }
 
-  input + input {
+  input:not(:first-of-type) {
     margin-top: 40px;
   }
 
   &__submit {
     float: right;
+  }
+
+  &__success-message {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
   }
 }
 
