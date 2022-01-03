@@ -37,7 +37,7 @@ The challenge was to create a responsive multi-page website based off of the des
 
 - Semantic HTML5 markup
 - CSS custom properties
-- SCSS
+- Sass
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
@@ -47,7 +47,7 @@ The challenge was to create a responsive multi-page website based off of the des
 
 ### What I learned
 
-This project was an excellent opportunity to reinforce my previous experience with React and learn a number of new things too. I also worked with SCSS and Leaflet for the first time, both of which proved to be fairly easy to use.
+This project was an excellent opportunity to reinforce my previous experience with React and learn a number of new things too. I also worked with Sass and Leaflet for the first time, both of which proved to be fairly easy to use.
 
 I'm particularly glad with how the Home page hero slideshow section turned out. Another fun challenge was figuring out how to set up the hero component design shared between the About and Contact pages of the site, with the image being cut in different ways depending on screen size.
 

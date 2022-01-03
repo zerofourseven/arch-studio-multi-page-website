@@ -1,7 +1,7 @@
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import {Icon} from 'leaflet';
-import markerIconPng from '../assets/leaflet-images/marker-icon.png';
+import markerIconPng from '../css/leaflet-styles/images/marker-icon.png';
 import { locationData } from '../data/data';
 
 const Map = () => {

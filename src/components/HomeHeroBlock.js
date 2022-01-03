@@ -4,7 +4,7 @@ import { slideData } from '../data/data'
 import Button from './Button'
 
 const HomeHeroBlock = () => {
-    const duration = 10000;
+    const duration = 13000;
     const [chosenSlide, setChosenSlide] = useState(0);
     const timeoutRef = useRef(null);
 

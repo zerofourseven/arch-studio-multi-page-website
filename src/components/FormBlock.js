@@ -6,6 +6,7 @@ const FormBlock = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [submitAttempt, setSubmitAttempt] = useState(false);
     const [submitSuccess, setSubmitSuccess] = useState(false);
 
     const nameInputRef = useRef();
@@ -21,7 +22,12 @@ const FormBlock = () => {
         setName('');
         setEmail('');
         setMessage('');
+        setSubmitAttempt(true);
         setSubmitSuccess(true);
+
+        //if(enteredName.length === 0){
+            //add error class to the field
+        //}
 
         const messageData = {
             name: enteredName,
@@ -56,7 +62,7 @@ const FormBlock = () => {
             :
                 <form className='form-block__form' onSubmit={submitHandler}>
                     <input 
-                        className='form-block__form-name' 
+                        className={submitAttempt ? 'form-block__form-name check-user' : 'form-block__form-name'}
                         type="text" 
                         value={name} 
                         onChange={(e) => {setName(e.target.value)}}
@@ -64,7 +70,7 @@ const FormBlock = () => {
                         ref={nameInputRef} 
                         placeholder='Name' /><span></span>
                     <input 
-                        className='form-block__form-email' 
+                        className={submitAttempt ? 'form-block__form-email check-user check-user-email' : 'form-block__form-email'}
                         type="email" 
                         value={email} 
                         onChange={(e) => {setEmail(e.target.value)}}
@@ -72,14 +78,14 @@ const FormBlock = () => {
                         ref={emailInputRef} 
                         placeholder='Email' /><span></span>
                     <textarea 
-                        className='form-block__form-message' 
+                        className={submitAttempt ? 'form-block__form-message check-user' : 'form-block__form-message'}
                         rows="4" 
                         value={message} 
                         onChange={(e) => {setMessage(e.target.value)}}
                         required 
                         ref={messageInputRef} 
                         placeholder='Message' /><span></span>
-                    <button className='button button--block form-block__submit' type='submit'> 
+                    <button className='button button--block form-block__submit' type='submit' onClick={(e) => {setSubmitAttempt(true)}}> 
                         <img src={arrowIcon} alt='Submit form' className="button__arrow" />
                     </button>
                 </form>

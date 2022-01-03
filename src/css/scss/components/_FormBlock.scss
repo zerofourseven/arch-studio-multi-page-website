@@ -29,28 +29,27 @@
       border-bottom: 3px solid $very-dark-blue;
       color: $very-dark-blue;
     }
-
-    &:user-invalid {
-      color: $errors-red;
-      border-color: $errors-red;
-    }
-
-    &:user-invalid + span::before {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: $errors-red;
-      position: absolute;
-      right: 0;
-      margin-top: -4rem;
-    }
   }
 
-  &__form-name:user-invalid + span:before,
-  &__form-message:user-invalid + span:before {
+  .check-user:invalid {
+    color: $errors-red;
+    border-color: $errors-red;
+  }
+
+  .check-user:invalid + span::before {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $errors-red;
+    position: absolute;
+    right: 0;
+    margin-top: -4rem;
+  }
+
+  .check-user:invalid + span:before {
     content: "Can't be empty";
   }
 
-  &__form-email:user-invalid + span:before {
+  .check-user-email:invalid + span:before {
     content: "Please enter a valid email";
   }
 

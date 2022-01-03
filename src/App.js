@@ -4,10 +4,12 @@ import { HomePage, PortfolioPage, AboutPage, ContactPage } from './pages';
 import PageTag from './components/PageTag';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <PageTag />
       <Navbar/>
       <Routes>

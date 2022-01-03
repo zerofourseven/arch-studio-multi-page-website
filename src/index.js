@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/normalize.css'
 import'./css/scss/index.scss';
-import './css/leaflet.css'
+import './css/leaflet-styles/leaflet.css'
 import App from './App';
 
 ReactDOM.render(
