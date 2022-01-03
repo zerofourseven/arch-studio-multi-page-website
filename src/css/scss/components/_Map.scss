@@ -1,0 +1,21 @@
+.map-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 367px;
+}
+
+@include screenTablet {
+  .map-container {
+    margin-left: 96px;
+    margin-right: 96px;
+    height: 560px;
+    max-width: unset;
+  }
+}
+
+@include screenDesktop {
+  .map-container {
+    margin: 0 auto;
+    max-width: 1140px;
+  }
+}

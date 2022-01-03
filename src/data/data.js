@@ -338,11 +338,13 @@ export const locationData = [
         name: 'Main Office',
         email: 'archone@mail.com',
         address: '1892 Chenoworth Drive TN',
-        phone: '123-456-3451'
+        phone: '123-456-3451',
+        coordinates: [35.5175, -83.5804]
     }, {
         name: 'Office II',
         email: 'archtwo@mail.com',
         address: '3399 Wines Lane TX',
-        phone: '832-123-4321'
+        phone: '832-123-4321',
+        coordinates: [31.9686, -96.5018]
     }
 ]
