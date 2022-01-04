@@ -6,8 +6,8 @@ const FormBlock = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [submitAttempt, setSubmitAttempt] = useState(false);
-    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [submitAttempt, setSubmitAttempt] = useState(false); //for allowing input fields to be set in error states
+    const [submitSuccess, setSubmitSuccess] = useState(false); //for successful form submission 
 
     const nameInputRef = useRef();
     const emailInputRef = useRef();
@@ -24,10 +24,6 @@ const FormBlock = () => {
         setMessage('');
         setSubmitAttempt(true);
         setSubmitSuccess(true);
-
-        //if(enteredName.length === 0){
-            //add error class to the field
-        //}
 
         const messageData = {
             name: enteredName,

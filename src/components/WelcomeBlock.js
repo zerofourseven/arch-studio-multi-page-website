@@ -3,7 +3,7 @@ import welcomeImage from '../assets/home/desktop/image-welcome.jpg'
 
 const WelcomeBlock = () => {
     return (
-        <section className="container block welcome-block">
+        <section className="container block welcome-block" id='welcome-block'>
                 <h1 className="large-header welcome-block__large-header disable-select">Welcome</h1>
                 <div  className="welcome-block__grid">
                     <div className="welcome-block__text">

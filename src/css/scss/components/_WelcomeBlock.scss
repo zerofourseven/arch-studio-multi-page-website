@@ -1,5 +1,6 @@
 .welcome-block {
   margin: 5rem auto;
+
   padding-top: 7rem;
   position: relative;
 
@@ -25,8 +26,14 @@
 }
 
 @include screenTablet {
+  #welcome-block {
+    margin-top: 10px;
+  }
+
   .welcome-block {
-    margin: 10rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    //padding-top: 0;
     &::before {
       display: none;
     }
@@ -34,6 +41,10 @@
 }
 
 @include screenDesktop {
+  #welcome-block {
+    margin-top: 30px;
+  }
+
   .welcome-block {
     &__image {
       display: block;

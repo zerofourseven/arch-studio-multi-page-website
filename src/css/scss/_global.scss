@@ -19,6 +19,18 @@ $errors-red: #df5656;
   font-family: Spartan, sans-serif;
 }
 
+@mixin screenTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screenDesktop {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
 .container {
   max-width: 1140px;
 }
@@ -32,19 +44,7 @@ $errors-red: #df5656;
   margin-top: 72px;
 }
 
-@mixin screenTablet {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin screenDesktop {
-  @media screen and (min-width: 1440px) {
-    @content;
-  }
-}
-
-@include screenDesktop {
+@include screenTablet {
   .block + .block {
     margin-top: 200px;
   }
