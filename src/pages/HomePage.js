@@ -14,17 +14,18 @@ const HomePage = () => {
         <>
             <HomeHeroBlock />
             <WelcomeBlock />
-            <section className="container block about-link-block" >
+            <section className="container block about-link-block" role='complementary'>
                 <div className="about-link-block__image-container">
                     <picture>
                         <source srcSet={aboutImgDesktop} media="(min-width: 1440px)" type="image/jpeg"/>
                         <source srcSet={aboutImgTablet} media="(min-width: 768px)" type="image/jpeg"/>
                         <source srcSet={aboutImgMobile} type="image/jpeg"/>
                         <img
-                        srcSet={`${aboutImgMobile} 375w, ${aboutImgTablet} 573w, ${aboutImgDesktop} 1110w`}
-                        src={aboutImgMobile}
-                        alt="A white modern building with water and a blue sky"
-                        className="about-link-block__image"
+                            srcSet={`${aboutImgMobile} 375w, ${aboutImgTablet} 573w, ${aboutImgDesktop} 1110w`}
+                            sizes="(min-width: 1440px) 1110px, (min-width: 768px) 573px, 375px"
+                            src={aboutImgMobile}
+                            alt="A white modern building with water and a blue sky"
+                            className="about-link-block__image"
                         />
                     </picture>
                 </div>

@@ -3,10 +3,10 @@ import welcomeImage from '../assets/home/desktop/image-welcome.jpg'
 
 const WelcomeBlock = () => {
     return (
-        <section className="container block welcome-block" id='welcome-block'>
+        <section className="container block welcome-block" id='welcome-block' >
                 <h1 className="large-header welcome-block__large-header disable-select">Welcome</h1>
                 <div  className="welcome-block__grid">
-                    <div className="welcome-block__text">
+                    <div className="welcome-block__text" role='main'>
                         <h2>Welcome to <br/>Arch Studio</h2>
                         <p>
                             We have a unique network and skillset to help bring your projects to life. Our 

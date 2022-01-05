@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const FeaturedBlock = () => {
     return (
-        <section className="container block featured-block">
+        <section className="container block featured-block" role='complementary'>
             <h2 className="featured-block__title">Featured</h2>
             <Button className="featured__button" linkName="/portfolio" text="see all" arrow="true" altText="View portfolio" />
             <div className="featured-grid">
@@ -28,6 +28,7 @@ const FeaturedBlock = () => {
                                 <source srcSet={image.jpeg.mobile} type="image/jpeg"/>
                                 <img
                                 srcSet={`${image.jpeg.mobile} 311w, ${image.jpeg.tablet} 573w, ${image.jpeg.desktop} 350w`}
+                                sizes="(min-width: 1440px) 350px, (min-width: 600px) 573px, 311px"
                                 src={image.jpeg.mobile}
                                 alt={title}
                                 className="project__image"

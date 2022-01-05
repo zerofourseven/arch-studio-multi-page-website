@@ -24,6 +24,7 @@ const PortfolioPage = () => {
                     <source srcSet={image.jpeg.mobile} type="image/jpeg"/>
                     <img
                       srcSet={`${image.jpeg.mobile} 311w, ${image.jpeg.tablet} 573w, ${image.jpeg.desktop} 350w`}
+                      sizes="(min-width: 1440px) 350px, (min-width: 600px) 573px, 311px"
                       src={image.jpeg.mobile}
                       alt={title}
                       className="project__image"

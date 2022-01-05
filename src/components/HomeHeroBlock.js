@@ -50,6 +50,7 @@ const HomeHeroBlock = () => {
                                     <source srcSet={image.mobile} type="image/jpeg"/>
                                     <img
                                     srcSet={`${image.mobile} 375w, ${image.tablet} 573w, ${image.desktop} 1110w`}
+                                    sizes="(min-width: 1440px) 1110px, (min-width: 600px) 573px, 375px"
                                     src={image.mobile}
                                     alt={title}
                                     className="project__image"

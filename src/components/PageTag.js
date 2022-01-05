@@ -13,7 +13,7 @@ const PageTag = () => {
     
 
     return (
-        <div className='page-tag'>
+        <div className='page-tag' role='presentation'>
             <hr />
             <p className='disable-select'>{currentLocation}</p>
             

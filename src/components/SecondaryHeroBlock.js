@@ -11,6 +11,7 @@ const SecondaryHeroBlock = ({header, title, text, images, altText}) => {
                     <source srcSet={images[0]} type="image/jpeg"/>
                     <img
                     srcSet={`${images[0]} 375w, ${images[1]} 573w, ${images[2]} 635w`}
+                    sizes="(min-width: 1440px) 635px, (min-width: 768px) 573px, 375px"
                     src={images[0]}
                     alt={altText}
                     className="secondary-hero-block__image"
