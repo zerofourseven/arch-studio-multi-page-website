@@ -18,11 +18,11 @@ const ContactPage = () => {
     const altText=`A black rotary dial phone`
     
     return (
-        <>
+        <main>
             <SecondaryHeroBlock header="Contact" title={<h2>Tell us about<br/>your project</h2>} text={pText} images={images} altText={altText}/>
             <ContactDetailsBlock />
             <FormBlock />
-        </>
+        </main>
     )
 }
 

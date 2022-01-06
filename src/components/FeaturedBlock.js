@@ -37,7 +37,7 @@ const FeaturedBlock = () => {
                                 
                                 
                             
-                            <h1 className="large-header project__number disable-select">{index + 1}</h1>
+                            <p className="large-header project__number disable-select">{index + 1}</p>
                               
                             <div className="project__info">
                                 <h3>{title}</h3>

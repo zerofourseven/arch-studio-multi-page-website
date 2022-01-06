@@ -18,7 +18,7 @@ const images = [heroImgMobile, heroImgTablet, heroImgDesktop];
 const altText=`The hands of a man in a white sweater typing on a laptop`;
 
     return (
-        <>
+        <main>
            <SecondaryHeroBlock header="About" title={<h2>Your team of<br/>Professionals</h2>} text={pText} images={images} altText={altText}/>
             <section className='container block heritage-block'>
                 <div className='heritage-block__grid'>
@@ -42,7 +42,7 @@ const altText=`The hands of a man in a white sweater typing on a laptop`;
 
             </section>
             <LeaderBlock />
-        </>
+        </main>
     )
 }
 

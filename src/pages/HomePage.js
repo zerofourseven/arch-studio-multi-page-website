@@ -11,7 +11,7 @@ import aboutImgDesktop from '../assets/home/desktop/image-small-team.jpg'
 
 const HomePage = () => {
     return (
-        <>
+        <main>
             <HomeHeroBlock />
             <WelcomeBlock />
             <section className="container block about-link-block" role='complementary'>
@@ -36,7 +36,7 @@ const HomePage = () => {
                 
             </section>
             <FeaturedBlock />
-        </>
+        </main>
     )
 }
 

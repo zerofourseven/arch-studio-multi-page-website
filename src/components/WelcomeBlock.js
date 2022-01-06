@@ -6,7 +6,7 @@ const WelcomeBlock = () => {
         <section className="container block welcome-block" id='welcome-block' >
                 <h1 className="large-header welcome-block__large-header disable-select">Welcome</h1>
                 <div  className="welcome-block__grid">
-                    <div className="welcome-block__text" role='main'>
+                    <div className="welcome-block__text">
                         <h2>Welcome to <br/>Arch Studio</h2>
                         <p>
                             We have a unique network and skillset to help bring your projects to life. Our 
