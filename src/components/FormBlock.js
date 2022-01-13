@@ -57,6 +57,7 @@ const FormBlock = () => {
                 </div> 
             :
                 <form className='form-block__form' onSubmit={submitHandler}>
+                    <label htmlFor='name'>Name</label>
                     <input 
                         className={submitAttempt ? 'form-block__form-name check-user' : 'form-block__form-name'}
                         type="text" 
@@ -64,7 +65,9 @@ const FormBlock = () => {
                         onChange={(e) => {setName(e.target.value)}}
                         required 
                         ref={nameInputRef} 
-                        placeholder='Name' /><span></span>
+                        placeholder='Name' 
+                        id='name'/><span></span>
+                    <label htmlFor='email'>Email</label>
                     <input 
                         className={submitAttempt ? 'form-block__form-email check-user check-user-email' : 'form-block__form-email'}
                         type="email" 
@@ -72,7 +75,9 @@ const FormBlock = () => {
                         onChange={(e) => {setEmail(e.target.value)}}
                         required 
                         ref={emailInputRef} 
-                        placeholder='Email' /><span></span>
+                        placeholder='Email' 
+                        id='email'/><span></span>
+                    <label htmlFor='message'>Message</label>
                     <textarea 
                         className={submitAttempt ? 'form-block__form-message check-user' : 'form-block__form-message'}
                         rows="4" 
@@ -80,7 +85,8 @@ const FormBlock = () => {
                         onChange={(e) => {setMessage(e.target.value)}}
                         required 
                         ref={messageInputRef} 
-                        placeholder='Message' /><span></span>
+                        placeholder='Message' 
+                        id='message'/><span></span>
                     <button className='button button--block form-block__submit' type='submit' onClick={(e) => {setSubmitAttempt(true)}}> 
                         <img src={arrowIcon} alt='Submit form' className="button__arrow" />
                     </button>
