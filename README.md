@@ -1,5 +1,7 @@
 # Arch Studio multi-page website
 
+**https://arch-studio-project047.netlify.app/**
+
 This is my solution to the [Arch Studio multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/arch-studio-multipage-website-wNIbOFYR6), a site with challenges to help with improving coding skills with realistic project building.
 
 ![Design preview for the Arch Studio multi-page website coding challenge](./preview.jpg)
@@ -8,7 +10,6 @@ This is my solution to the [Arch Studio multi-page website challenge on Frontend
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -26,10 +27,6 @@ The challenge was to create a responsive multi-page website based off of the des
   - The `Name`, `Email` or `Message` fields are empty
   - The `Email` is not formatted correctly
 - View actual locations on the contact page map.
-
-### Link
-
-- Solution URL: [On Netlify](https://arch-studio-project047.netlify.app/)
 
 ## My process
 
