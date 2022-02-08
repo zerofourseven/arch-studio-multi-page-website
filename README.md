@@ -2,7 +2,7 @@
 
 **https://arch-studio-project047.netlify.app/**
 
-This is my solution to the [Arch Studio multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/arch-studio-multipage-website-wNIbOFYR6), a site with challenges to help with improving coding skills with realistic project building.
+This is my solution to the [Arch Studio multi-page website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/arch-studio-multipage-website-wNIbOFYR6), a site with challenges to help with improving coding skills with realistic project building. They provided design files. All of the coding for the site was done by me.
 
 ![Design preview for the Arch Studio multi-page website coding challenge](./preview.jpg)
 
